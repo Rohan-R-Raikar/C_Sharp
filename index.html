@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C# Notes</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; padding: 20px; background-color: #f8f9fa; }
+        h1, h2 { color: #2c3e50; text-align: center; }
+        .container { max-width: 900px; margin: auto; padding: 20px; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-radius: 8px; }
+        h3 { color: #3498db; }
+        pre { background: #eef; padding: 10px; border-left: 4px solid #3498db; overflow-x: auto; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>C# Notes</h1>
+        
+        <h2>Core C# Topics</h2>
+        
+        <h3>C# Intro</h3>
+        <p>C# is a modern, object-oriented programming language developed by Microsoft.</p>
+        
+        <h3>C# Get Started</h3>
+        <pre>
+using System;
+class Program {
+    static void Main() {
+        Console.WriteLine("Hello, World!");
+    }
+}
+        </pre>
+        
+        <h3>C# Syntax</h3>
+        <pre>
+using System;
+class Program {
+    static void Main() {
+        int x = 10;
+        Console.WriteLine(x);
+    }
+}
+        </pre>
+        
+        <h3>C# Output</h3>
+        <pre>
+Console.WriteLine("This is C# Output");
+        </pre>
+        
+        <h3>C# Comments</h3>
+        <pre>
+// This is a single-line comment
+/* This is a multi-line comment */
+        </pre>
+        
+        <h3>C# Variables</h3>
+        <pre>
+int num = 5;
+string name = "John";
+        </pre>
+        
+        <h3>C# Data Types</h3>
+        <pre>
+bool isActive = true;
+char letter = 'A';
+double pi = 3.14;
+        </pre>
+        
+        <h3>C# Type Casting</h3>
+        <pre>
+double num = 9.78;
+int newNum = (int)num;  // Explicit casting
+        </pre>
+        
+        <h3>C# User Input</h3>
+        <pre>
+Console.Write("Enter your name: ");
+string name = Console.ReadLine();
+Console.WriteLine("Hello, " + name);
+        </pre>
+        
+        <h3>C# Operators</h3>
+        <pre>
+int sum = 5 + 3;
+bool isGreater = (10 > 5);
+        </pre>
+        
+        <h3>C# If...Else</h3>
+        <pre>
+if (age > 18) {
+    Console.WriteLine("Adult");
+} else {
+    Console.WriteLine("Minor");
+}
+        </pre>
+        
+        <h3>C# Switch</h3>
+        <pre>
+switch (day) {
+    case 1: Console.WriteLine("Monday"); break;
+    default: Console.WriteLine("Other day"); break;
+}
+        </pre>
+        
+        <h3>C# While Loop</h3>
+        <pre>
+int i = 0;
+while (i < 5) {
+    Console.WriteLine(i);
+    i++;
+}
+        </pre>
+        
+        <h3>C# For Loop</h3>
+        <pre>
+for (int i = 0; i < 5; i++) {
+    Console.WriteLine(i);
+}
+        </pre>
+        
+        <h3>C# Arrays</h3>
+        <pre>
+int[] numbers = {1, 2, 3, 4};
+Console.WriteLine(numbers[0]);
+        </pre>
+        
+        <h3>C# Methods</h3>
+        <pre>
+void MyMethod() {
+    Console.WriteLine("Method Executed");
+}
+        </pre>
+        
+        <h3>C# Classes</h3>
+        <pre>
+class Car {
+    public string model = "Ford";
+}
+Car myCar = new Car();
+Console.WriteLine(myCar.model);
+        </pre>
+        
+        <h3>C# Constructors</h3>
+        <pre>
+class Car {
+    public string model;
+    public Car(string modelName) {
+        model = modelName;
+    }
+}
+Car myCar = new Car("Tesla");
+Console.WriteLine(myCar.model);
+        </pre>
+        
+        <h3>C# Inheritance</h3>
+        <pre>
+class Animal {
+    public void MakeSound() {
+        Console.WriteLine("Animal Sound");
+    }
+}
+class Dog : Animal {}
+Dog myDog = new Dog();
+myDog.MakeSound();
+        </pre>
+        
+        <h3>C# Interface</h3>
+        <pre>
+interface IAnimal {
+    void MakeSound();
+}
+class Dog : IAnimal {
+    public void MakeSound() {
+        Console.WriteLine("Bark");
+    }
+}
+Dog myDog = new Dog();
+myDog.MakeSound();
+        </pre>
+        
+        <h3>C# Exceptions</h3>
+        <pre>
+try {
+    int x = 10 / 0;
+} catch (Exception e) {
+    Console.WriteLine("Error: " + e.Message);
+}
+        </pre>
+    </div>
+</body>
+</html>
